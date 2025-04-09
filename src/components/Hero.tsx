@@ -19,7 +19,7 @@ const Hero = () => {
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
               TalkAI es un agente virtual que simula llamadas reales para entrenar 
-              a jóvenes y nuevos empleados en call centers, mejorando sus habilidades 
+              a nuevos empleados en call centers, mejorando sus habilidades 
               de comunicación y atención al cliente.
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">

@@ -6,7 +6,7 @@ const steps = [
     id: 1,
     name: "Configuración del agente",
     description:
-      "Personaliza el agente virtual según tus necesidades específicas: tipo de industria, escenarios comunes y objetivos de entrenamiento.",
+      "Personaliza el agente virtual según tus necesidades específicas con nuestros 3 modos: tipo de industria, escenarios comunes y objetivos de entrenamiento.",
     icon: MessageSquare,
   },
   {
@@ -77,7 +77,7 @@ const HowItWorks = () => {
                 Tecnología de última generación
               </h3>
               <p className="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">
-                TalkAI utiliza los modelos más avanzados de Eleven Labs para crear una experiencia de entrenamiento ultrarrealista.
+                TalkAI utiliza los modelos más avanzados de IA para crear una experiencia de entrenamiento ultrarrealista.
               </p>
             </div>
             <div className="px-6 py-8 sm:py-12 sm:px-12 lg:grid lg:grid-cols-3 lg:gap-8">
@@ -99,7 +99,7 @@ const HowItWorks = () => {
               </div>
               <div className="mt-10 lg:mt-0 text-center">
                 <div className="mt-2 flex flex-col items-center justify-center">
-                  <h3 className="text-5xl font-extrabold text-primary">+40%</h3>
+                  <h3 className="text-5xl font-extrabold text-primary">+60%</h3>
                   <p className="mt-1 text-lg font-medium text-gray-500">
                     Aumento en satisfacción del cliente
                   </p>

@@ -19,7 +19,7 @@ const testimonials = [
     author: {
       name: "Carlos Rodríguez",
       role: "Estudiante",
-      company: "Universidad de México",
+      company: "Universidad de los Andes",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
   },
@@ -44,7 +44,7 @@ const Testimonials = () => {
             Lo que nuestros clientes dicen
           </h2>
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
-            Descubre cómo TalkAI está transformando el entrenamiento en call centers en toda Latinoamérica.
+            Descubre cómo TalkAI está transformando el entrenamiento en call centers en toda LATAM.
           </p>
         </div>
 

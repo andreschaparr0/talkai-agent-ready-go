@@ -1,8 +1,16 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  --color-fondo: #1C1C1E;
+  --color-tarjeta: #D3D3D3;
+  --color-texto: #121212;
+  --color-texto-secundario: #555555;
+  --color-acento: #00C853;
+  --color-borde: #3A3A3C;
+  --color-premium: #000000;
 }
 
 .logo {
@@ -12,10 +20,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #1C1C1E);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #3A3A3C);
 }
 
 @keyframes logo-spin {

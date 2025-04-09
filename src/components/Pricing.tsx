@@ -6,46 +6,38 @@ import { Check } from "lucide-react";
 const tiers = [
   {
     name: "Básico",
-    price: "$299",
+    price: "$5",
     description: "Ideal para pequeños call centers o startups",
     features: [
-      "Hasta 10 agentes activos",
-      "20 escenarios predefinidos",
-      "Análisis básico de conversaciones",
+      "Un agente activo",
+      "120 minutos de conversación personalizada",
+      "Doble de memoria de conversaciones",
       "Soporte por email",
-      "Actualizaciones mensuales",
     ],
     cta: "Comenzar prueba gratuita",
     mostPopular: false,
   },
   {
-    name: "Profesional",
-    price: "$599",
+    name: "Advanced",
+    price: "$10",
     description: "Perfecto para call centers en crecimiento",
     features: [
-      "Hasta 50 agentes activos",
-      "40 escenarios predefinidos",
-      "Creación de escenarios personalizados",
+      "Hasta 5 agentes activos",
+      "4 escenarios predefinidos",
       "Análisis avanzado de conversaciones",
-      "Integraciones con CRM",
-      "Soporte prioritario",
-      "Actualizaciones semanales",
     ],
     cta: "Comenzar prueba gratuita",
     mostPopular: true,
   },
   {
-    name: "Empresarial",
-    price: "Personalizado",
+    name: "Platinum",
+    price: "15",
     description: "Para grandes operaciones con necesidades específicas",
     features: [
-      "Agentes ilimitados",
-      "Escenarios ilimitados y personalizados",
-      "Análisis en tiempo real",
-      "Integraciones avanzadas",
-      "API completa",
-      "Soporte 24/7",
-      "Gerente de cuenta dedicado",
+      "Hasta 10 agentes activos",
+      "4 escenarios predefinidos",
+      "Análisis avanzado de conversaciones",
+      "Soporte 24/7",,
     ],
     cta: "Contactar ventas",
     mostPopular: false,
@@ -61,7 +53,7 @@ const Pricing = () => {
             Planes flexibles para cada necesidad
           </h2>
           <p className="mt-4 text-xl text-gray-500 max-w-2xl mx-auto">
-            Elige el plan que mejor se adapte a tus necesidades, sin compromisos a largo plazo.
+            Elige el plan que mejor se adapte a tus necesidades, sin compromisos!
           </p>
         </div>
 
