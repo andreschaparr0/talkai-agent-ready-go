@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex justify-between w-full">
             <div className="flex-shrink-0 flex items-center">
+            <img src="\favicon_w3cub\favicon-32x32.png" alt="Logo" className="h-6 w-6"/>
               <span className="text-2xl font-bold text-primary">TalkAI</span>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
