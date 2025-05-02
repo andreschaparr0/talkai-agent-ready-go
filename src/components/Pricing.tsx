@@ -103,20 +103,6 @@ const Pricing = () => {
             </Card>
           ))}
         </div>
-
-        <div className="mt-16 bg-gray-50 rounded-2xl p-8 md:p-12">
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-gray-900">¿Tienes más preguntas?</h3>
-            <p className="mt-4 text-lg text-gray-500">
-              Nuestro equipo está listo para ayudarte a encontrar la solución perfecta para tu negocio.
-            </p>
-            <div className="mt-6">
-              <Button variant="outline" className="mx-auto">
-                Contactar con ventas
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

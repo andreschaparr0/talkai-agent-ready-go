@@ -15,9 +15,9 @@ const features = [
     icon: Users,
   },
   {
-    name: "Voz  interactivo",
+    name: "Voz  interactiva",
     description:
-      "Integración completa con audio y video para una experiencia de entrenamiento inmersiva y realista.",
+      "Integración completa con audio para una experiencia de entrenamiento inmersiva y realista.",
     icon: Video,
   },
   {

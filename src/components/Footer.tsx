@@ -148,40 +148,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-700 pt-8">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div>
-              <h3 className="text-sm font-semibold text-gray-300 tracking-wider uppercase">
-                Suscríbete a nuestro newsletter
-              </h3>
-              <p className="mt-2 text-base text-gray-400">
-                Las últimas noticias, artículos y recursos, enviados a tu inbox semanalmente.
-              </p>
-              <div className="mt-4 sm:flex sm:max-w-md">
-                <Input
-                  type="email"
-                  name="email"
-                  id="email-address"
-                  autoComplete="email"
-                  required
-                  placeholder="Tu email"
-                  className="bg-gray-800 text-white placeholder-gray-400 border-gray-700 focus:ring-primary focus:border-primary"
-                />
-                <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                  <Button type="submit">Suscribirse</Button>
-                </div>
-              </div>
-            </div>
+        <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+          <div className="flex space-x-6 md:order-2">
+            <p className="text-base text-gray-400">Powered by Eleven Labs</p>
           </div>
-          <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
-            <div className="flex space-x-6 md:order-2">
-              <p className="text-base text-gray-400">Powered by Eleven Labs</p>
-            </div>
-            <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-              &copy; 2025 TalkAI, Inc. Todos los derechos reservados.
-            </p>
-          </div>
+          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+            &copy; 2025 TalkAI, Inc. Todos los derechos reservados.
+          </p>
         </div>
+        
       </div>
     </footer>
   );
