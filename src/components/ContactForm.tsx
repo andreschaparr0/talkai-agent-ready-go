@@ -5,14 +5,14 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
+import emailjs from '@emailjs/browser';
+
 
 const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
-    role: "",
     message: "",
     interest: "",
   });
@@ -31,23 +31,35 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate API call
-    setTimeout(() => {  
-      setIsSubmitting(false);
-      toast({
-        title: "Formulario enviado",
-        description: "Nos pondremos en contacto contigo pronto. ¡Gracias por tu interés!",
+  
+    const serviceID = 'service_tyaijfe'; // ← reemplaza con tu Service ID
+    const templateID = 'template_x8ndvh7'; // ← reemplaza con tu Template ID
+    const publicKey = 'DCFvRwxNdfC9fsPjn'; // ← reemplaza con tu Public Key
+  
+    emailjs
+      .send(serviceID, templateID, formData, publicKey)
+      .then(() => {
+        toast({
+          title: 'Formulario enviado',
+          description: 'Nos pondremos en contacto contigo pronto. ¡Gracias por tu interés!',
+        });
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+          interest: '',
+        });
+      })
+      .catch((error) => {
+        toast({
+          title: 'Error al enviar',
+          description: 'Intenta de nuevo más tarde.',
+        });
+        console.error('Error al enviar el formulario:', error);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        role: "",
-        message: "",
-        interest: "",
-      });
-    }, 1500);
   };
 
   return (
