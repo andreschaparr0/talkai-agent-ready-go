@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex justify-between w-full">
-            <div className="flex-shrink-0 flex items-center">
+            <div className="flex-shrink-0 flex items-center" onClick={()=>window.scrollTo({top: 0, behavior: "smooth"})}>
             <img src="\favicon_w3cub\favicon-32x32.png" alt="Logo" className="h-6 w-6"/>
               <span className="text-2xl font-bold text-primary">TalkAI</span>
             </div>
@@ -42,7 +42,13 @@ const Navbar = () => {
               </a>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:items-center">
-              <Button variant="default">Contactar</Button>
+            <Button
+                variant="default"
+                  onClick={() => {
+                    const contactoSection = document.getElementById("contacto");
+                      if (contactoSection) {contactoSection.scrollIntoView({ behavior: "smooth" });}}}>
+                  Contactar
+              </Button>
             </div>
           </div>
           <div className="-mr-2 flex items-center sm:hidden">

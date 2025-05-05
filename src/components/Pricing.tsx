@@ -39,7 +39,7 @@ const tiers = [
       "Análisis avanzado de conversaciones",
       "Soporte 24/7",,
     ],
-    cta: "Contactar ventas",
+    cta: "Comenzar prueba gratuita",
     mostPopular: false,
   },
 ];
