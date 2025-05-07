@@ -24,11 +24,12 @@ const Hero = () => {
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="text-lg px-8">
+                <Button
+                  size="lg"
+                  className="text-lg px-8"
+                  onClick={() => window.open("https://talk-i3nl5700o-hernanramirezrs-projects.vercel.app/", "_blank")}
+                >
                   Prueba Gratis
-                </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8">
-                  Demostración
                 </Button>
               </div>
               <p className="mt-3 text-sm text-gray-500">
