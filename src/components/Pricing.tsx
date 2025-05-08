@@ -96,7 +96,7 @@ const Pricing = () => {
                 <Button 
                   className="w-full" 
                   variant={tier.mostPopular ? "default" : "outline"}
-                  onClick={() => window.open("https://talk-i3nl5700o-hernanramirezrs-projects.vercel.app/", "_blank")}
+                  onClick={() => window.open("https://talk-ai-khaki.vercel.app", "_blank")}
                 >
                   {tier.cta}
                 </Button>

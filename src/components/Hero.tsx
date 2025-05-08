@@ -27,7 +27,7 @@ const Hero = () => {
                 <Button
                   size="lg"
                   className="text-lg px-8"
-                  onClick={() => window.open("https://talk-i3nl5700o-hernanramirezrs-projects.vercel.app/", "_blank")}
+                  onClick={() => window.open("https://talk-ai-khaki.vercel.app", "_blank")}
                 >
                   Prueba Gratis
                 </Button>
